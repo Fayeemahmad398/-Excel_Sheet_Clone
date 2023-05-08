@@ -1,0 +1,186 @@
+body {
+  margin: 0px;
+  box-sizing: border-box;
+  background-color: #e2efda;
+}
+
+/* cursor: pointer; */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  overflow-x: auto;
+}
+td,
+th {
+  border: 1px solid #333;
+  width: 180px;
+}
+.greyCol {
+  background-color: grey;
+}
+ul {
+  margin: 0px;
+  margin-left: 29px;
+  padding: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+}
+li a {
+  display: block;
+  text-decoration: none;
+  padding: 3px 15px;
+  margin: 0px 10px;
+  /* border: 1px solid red; */
+  /* background-color: #fff; */
+  color: white;
+  font-weight: bold;
+}
+#navbar {
+  /* border: 1px solid rgb(35, 20, 234); */
+  background-color: rgb(28 108 64);
+  padding-top: 20px;
+  width: 100%;
+}
+li a:hover {
+  background-color: #e2efda;
+  color: rgb(28 108 64);
+}
+#container-icons {
+  margin: 10px 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 5px !important;
+  height: 30px;
+  width: 100%;
+  /* border: 1px solid rebeccapurple; */
+}
+button {
+  display: block;
+  height: 10px;
+}
+input {
+  display: block;
+  height: fit-content;
+  width: 100%;
+}
+span {
+  margin: 0px 10px;
+}
+#inputboxActiveCell {
+  display: flex;
+  flex-direction: row;
+  /* border: 1px solid red; */
+  font-size: 20px;
+  justify-content: start;
+  align-items: center;
+  margin-left: 3px;
+  height: 39px;
+}
+#cellNo {
+  height: 20px;
+  width: 70px;
+  outline: 1px solid grey;
+  margin: 12px;
+  font-weight: bold;
+  color: rgb(28 108 64);
+  background-color: white;
+}
+#formula {
+  outline: 1px solid grey;
+  height: 20px;
+  width: 600px;
+}
+select {
+  margin: 0px 15px;
+}
+#inputboxActiveCell input {
+  display: block;
+  width: 90%;
+  height: 20px;
+  margin-left: 10px;
+  border: none;
+}
+p {
+  margin: 0px;
+}
+#fx {
+  font-weight: bold;
+  margin-left: 20px;
+  color: rgb(28 108 64);
+}
+option {
+  background-color: rgb(28 108 64);
+  color: white;
+}
+
+#choosefile1,
+#text-color,
+#bg-color {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  background-color: white;
+  border: white;
+  margin: 0px;
+  padding: 0px;
+}
+label input {
+  visibility: hidden;
+}
+#single-td {
+  /* position: relative; */
+  background-color: rgb(28 108 64);
+}
+
+.sheets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.deleteFile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* border: 1px solid red; */
+  height: fit;
+  width: fit-content;
+}
+#deleteSheet {
+  display: block;
+  font-size: 20px;
+}
+#addSheet {
+  display: block;
+  width: fit-content;
+  height: 20px;
+}
+
+@media (max-width: 900px) {
+  ul {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    margin: 0px;
+    gap: 8px;
+  }
+  #container-icons {
+    height: 180px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  th {
+    font-size: 11px;
+  }
+  .sheets{
+    display: none;
+
+  }
+  nav{
+    padding-top: 5px !important;
+  }
+}
